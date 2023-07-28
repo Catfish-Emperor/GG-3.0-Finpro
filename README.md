@@ -99,7 +99,7 @@ There are three database models :
 ```
 **POST /comment/:id**
 ----
-  Returns all comments in the database that are related to the videoId, got the input from :id param.
+  post a comment to the database that is related to the videoId, got the input from :id param.
 * **URL Params**  
   *Required:* `id=[integer]`
 * **Data Params**  
