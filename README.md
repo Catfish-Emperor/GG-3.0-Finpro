@@ -7,7 +7,7 @@ There are three database models :
 * Products
 * Comments
 
-#videos
+## videos
 * video object
 ```
 {
@@ -36,7 +36,7 @@ There are three database models :
 }
 ```
 
-#products
+## products
 * product object
 ```
 {
@@ -67,7 +67,7 @@ There are three database models :
 }
 ```
 
-#comments
+## comments
 * comment object
 ```
 {
