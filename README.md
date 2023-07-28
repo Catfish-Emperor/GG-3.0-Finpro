@@ -66,3 +66,51 @@ There are three database models :
          ]
 }
 ```
+
+#comments
+* comment object
+```
+{
+  "_id": {"$oid": "xxxxxxx"},
+  "userName": "User 1",
+  "comment": "Comment from User 1 about video 01",
+  "timeStamp": {"$date": "xxxxxx"},
+  "videoId": "01"
+}
+```
+**GET /comment/:id**
+----
+  Returns all comments in the database that are related to the videoId, got the input from :id param.
+* **URL Params**  
+  *Required:* `id=[integer]`
+* **Data Params**  
+  None
+* **Success Response:**  
+* **Code:** 200  
+  **Content:**  
+```
+{
+  comments: [
+           {<comment_object>},
+           {<comment_object>},
+           {<comment_object>}
+         ]
+}
+```
+**POST /comment/:id**
+----
+  Returns all comments in the database that are related to the videoId, got the input from :id param.
+* **URL Params**  
+  *Required:* `id=[integer]`
+* **Data Params**  
+  None
+* **Success Response:**  
+* **Code:** 201  
+  **example post req body type raw json:**  
+```
+{
+    "userName": "Hadi",
+    "comment": "This product is good",
+    "videoId": "01"
+}
+```
