@@ -114,3 +114,11 @@ There are three database models :
     "videoId": "01"
 }
 ```
+
+## How to run in Local:
+1. git clone <https://github.com/algol007/generasi-gigih-be.git](https://github.com/Catfish-Emperor/GG-3.0-Finpro.git>
+2. open the file with your code editor
+3. create .env and adjust the port
+4. npm install
+5. node initialize_db.js
+6. npm start
